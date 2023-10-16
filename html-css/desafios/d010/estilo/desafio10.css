@@ -153,6 +153,7 @@ main a{
     text-decoration: none;
     font-weight: bold;
     padding: 2px 6px;
+    text-wrap: nowrap;
 }
 
 main a:hover {
