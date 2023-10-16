@@ -256,5 +256,9 @@ a#tavinho {
     color: white;
 }
 
+a#tavinho:hover {
+    cursor: auto;
+}
+
 
 /*----------------------body----------------------*/
