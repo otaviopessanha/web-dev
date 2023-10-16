@@ -96,10 +96,10 @@ nav {
     background-color: transparent;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.200);
-    text-align: justify;
+    text-align: left;
 }
 
-nav > a {
+nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
