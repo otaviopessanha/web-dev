@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.gradient-text {
+    background-image: linear-gradient(to bottom, black, darkred 5%, black);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, white, black, black 50%);
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    p > img {
+        width: 600px;
+        height: 500px;
+    }
