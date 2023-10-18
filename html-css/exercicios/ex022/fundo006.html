@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 
     <style>
         body {
             height: 97.5vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover; */
             /*
              background-size: cover; 
                 - Cobre todo o background com a imagem.
@@ -20,11 +20,19 @@
              background-size: contain;
                 - Mostra 100% da imagem, sem cortes.
              */
+             background-attachment: fixed;
+
+             /* Shorthand - background
+                color > image > position > repeat > [size](nao funciona hehe) > attachment
+              */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -46,4 +54,4 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis provident ipsa fuga, eius facilis dignissimos possimus a iusto vitae amet esse officia nostrum placeat cumque aspernatur explicabo laudantium rerum laboriosam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error harum illo accusamus unde ducimus, possimus quae, autem porro cumque minima nobis nulla, excepturi perferendis. Nesciunt consequatur harum est tempore doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempora atque sed, repellendus ratione veritatis porro quod dolores minus! Ab laboriosam eius officia dolores provident corporis molestias incidunt autem ex!</p>
     </main>
 </body>
-</html>
+</h
