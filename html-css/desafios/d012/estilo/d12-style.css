@@ -1,17 +1,19 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: fonte-titulo;
-    src: url(fontes/Passion_One.zip);
+    font-family: titulo;
+    src: url(fontes/passion/PassionOne-Regular.ttf) format(truetype);
 }
 
 @font-face {
-    font-family: fonte-poema;
-    src: url(fontes/Sriracha.zip);
+    font-family: poema;
+    src: url(fontes/Sriracha/Sriracha-Regular.ttf) format(truetype);
 }
 
 :root {
-    
+    --titulo: titulo, cursive;
+    --poema: poema, cursive;
+    --resto: Verdana, sans-serif;
 }
 
 * {
@@ -19,14 +21,53 @@
     padding: 0%;
 }
 
-main {
-    max-width: 450px;
-    margin: auto;
-}
-
 header {
     text-align: center;
     color: white;
     background-color: black;
     margin: auto;
+    padding: 40px;
+}
+
+header h1 {
+    font-family: var(--titulo);
+    font-weight: bolder;
+    font-size: 10vw;
+}
+
+header p {
+    font-size: 1.2vw;
+    font-family: var(--resto);
+}
+
+section {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+section#flor {
+    background-image: url("imagens/background001.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#livro {
+    background-image: url("imagens/background002.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section p {
+    font-size: 4vw;
+    font-family: var(--poema);
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+p.destaque {
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.200);
 }
