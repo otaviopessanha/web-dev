@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: titulo;
-    src: url(fontes/passion/PassionOne-Regular.ttf) format(truetype);
+    src: url(fontes/passion/PassionOne-Bold.ttf) format(truetype);
 }
 
 @font-face {
@@ -29,6 +29,16 @@ header {
     padding: 40px;
 }
 
+a#milton {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+a#milton:hover {
+    text-decoration: underline;
+}
+
 header h1 {
     font-family: var(--titulo);
     font-weight: bolder;
@@ -36,27 +46,30 @@ header h1 {
 }
 
 header p {
-    font-size: 1.2vw;
+    font-size: 0.8em;
     font-family: var(--resto);
 }
 
 section {
-    border: 1px solid black;
     padding: 15px;
 }
 
 section#flor {
     background-image: url("imagens/background001.jpg");
+    background-position: center right;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.685);
 }
 
 section#livro {
     background-image: url("imagens/background002.jpg");
+    background-position: center right;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.685);
 }
 
 section p {
@@ -69,5 +82,22 @@ section p {
 p.destaque {
     display: inline-block;
     color: white;
-    background-color: rgba(0, 0, 0, 0.200);
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+footer{
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-family: var(--resto);
+}
+
+a#tavin {
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: auto;
+    color: white;
 }
