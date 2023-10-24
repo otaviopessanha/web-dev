@@ -19,14 +19,14 @@
 
             var res = document.getElementById('res')
 
-            var pais = String(txtp.value)
+            var pais = String(txtp.value.toUpperCase())
 
-            if (pais == 'brasil') {
+            if (pais == 'BRASIL') {
                 res.innerHTML = `Você é brasileiro!`
-                res.innerHTML += `Seu país de orígem é ${pais}`
+                res.innerHTML += `Seu país de orígem é ${pais.toUpperCase()}`
             } else {
                 res.innerHTML = `Você é estrangeiro!`
-                res.innerHTML += `Seu país de orígem é ${pais}`
+                res.innerHTML += `Seu país de orígem é ${pais.toUpperCase()}`
             }
         }
 
