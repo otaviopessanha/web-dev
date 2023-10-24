@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Digite seu país de orígem</h1>
+
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res">Resultado</div>
+    
+    <script>
+
+        function verif() {
+            var txtp = document.getElementById('txtpais')
+
+            var res = document.getElementById('res')
+
+            var pais = String(txtp.value)
+
+            if (pais == 'brasil') {
+                res.innerHTML = `Você é brasileiro!`
+                res.innerHTML += `Seu país de orígem é ${pais}`
+            } else {
+                res.innerHTML = `Você é estrangeiro!`
+                res.innerHTML += `Seu país de orígem é ${pais}`
+            }
+        }
+
+    </script>
+</body>
+</html>
