@@ -19,7 +19,7 @@ section{
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.350);
 }
 
-p a {
+footer p a {
     text-decoration: none;
     color: white;
     padding: 2px;
@@ -27,7 +27,7 @@ p a {
     transition: 1s;
 }
 
-img#gh {
+footer img {
     width:15px;
     margin-right:5px;
     }
