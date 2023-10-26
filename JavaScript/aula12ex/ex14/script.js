@@ -5,50 +5,42 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     var min = data.getMinutes()
+    var frs = document.getElementById('frs')
     
     msg.innerHTML = `Agora são ${hora} horas e ${min} minutos.`
 
     if (hora >= 5 && hora < 12) {
         //bom dia
-        img.src = '../imagens/manha.png'
+        img.src = 'imagens/manha.png'
         document.body.style.background = '#E9BF91'
+        frs.innerHTML = 'Tenha um bom dia!'
         otavio.onmouseover = function dentro() {
             otavio.style.color = '#E9BF91'
-            otavio.style.backgroundColor = 'white'
-            otavio.style.boxShadow = '1px 1px 5px rgba(0, 0, 0, 0.3)'
         }
         otavio.onmouseout = function fora() {
             otavio.style.color = 'white'
-            otavio.style.backgroundColor = 'transparent'
-            otavio.style.boxShadow = '0px 0px 0px'
         }
     } else if (hora < 18 && hora >= 12) {
         //boa tarde
-        img.src = '../imagens/tarde.png'
+        img.src = 'imagens/tarde.png'
         document.body.style.background = '#FB7200'
+        frs.innerHTML = 'Tenha uma boa tarde!'
         otavio.onmouseover = function dentro() {
             otavio.style.color = '#FB7200'
-            otavio.style.backgroundColor = 'white'
-            otavio.style.boxShadow = '1px 1px 5px rgba(0, 0, 0, 0.3)'
         }
         otavio.onmouseout = function fora() {
             otavio.style.color = 'white'
-            otavio.style.backgroundColor = 'transparent'
-            otavio.style.boxShadow = '0px 0px 0px'
         }
     } else {
         //boa noite
-        img.src = '../imagens/noite.png'
+        img.src = 'imagens/noite.png'
         document.body.style.background = '#0F4870'
+        frs.innerHTML = 'Tenha uma boa noite!'
         otavio.onmouseover = function dentro() {
             otavio.style.color = '#0F4870'
-            otavio.style.backgroundColor = 'white'
-            otavio.style.boxShadow = '1px 1px 5px rgba(0, 0, 0, 0.3)'
         }
         otavio.onmouseout = function fora() {
             otavio.style.color = 'white'
-            otavio.style.backgroundColor = 'transparent'
-            otavio.style.boxShadow = '0px 0px 0px'
         }
     }
 }

@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
 body {
+    text-align: center;
     background-color: rgb(70, 142, 236);
     font: normal 15pt Arial;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -14,7 +17,7 @@ section{
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 75vw;
     margin: auto;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.350);
 }
@@ -24,7 +27,7 @@ footer p a {
     color: white;
     padding: 2px;
     border-radius: 5px;
-    transition: 1s;
+    transition: .7s;
 }
 
 footer img {
@@ -36,9 +39,15 @@ p a::after {
     content: '☚';
 }
 
+a#otavio:hover {
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.350);
+}
+
 div {
     text-align: center;
     padding: 8px;
+    margin: auto;
 }
 
 footer {
