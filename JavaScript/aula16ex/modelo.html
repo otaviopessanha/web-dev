@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+
+        <div>
+            <p>
+                Número entre 1 e 100:
+                <input type="number" name="txtnum" id="txtnum">
+                <input type="button" value="Adicionar" onclick="adc()">
+            </p>
+            <p>
+                <select name="sel" id="sel" size="5"></select>
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="cont()">
+            </p>
+        </div>
+
+        <div id="res">Aguandando números...</div>
+
+    </section>
+
+    <footer>
+        <p><img id="gh" src="imagens/gh-icon.png" alt="Ícone Github"><a id="otavio" href="https://github.com/otaviopessanha">otaviopessanha</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
