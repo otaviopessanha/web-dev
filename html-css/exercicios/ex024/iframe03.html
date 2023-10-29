@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça um escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis repudiandae aperiam reiciendis fugit! Error ad, quaerat ea debitis magnam ab possimus. Accusantium, unde illum laborum deleniti vel quo beatae cum?</p>
+
+    <ul>
+        <li><a href="pag-extras/pg01.html" target="frame">Primeira página</a></li>
+        <li><a href="pag-extras/pg02.html" target="frame">Segunda página</a></li>
+        <li><a href="pag-extras/pg03.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, quae? Vitae odio aperiam sunt? Suscipit, illo placeat reprehenderit corrupti eos repellat pariatur provident impedit ipsum, cumque natus voluptas ipsam eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tenetur voluptatum, modi consequatur voluptatibus velit. Ipsam, expedita provident! Pariatur natus vitae quod labore! Quod ratione minus facilis asperiores assumenda impedit.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio natus iusto, voluptatibus delectus reiciendis ipsum debitis corrupti incidunt facere sequi optio quam eius, non dolores. Cumque quod quis amet? Possimus.</p><img src='imagens/gh-icon.png'>" name="frame" id="tela">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio natus iusto, voluptatibus delectus reiciendis ipsum debitis corrupti incidunt facere sequi optio quam eius, non dolores. Cumque quod quis amet? Possimus.</p>
+</body>
+</html>
