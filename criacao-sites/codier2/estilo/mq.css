@@ -13,11 +13,16 @@
 */
 
 @media screen and (min-width: 768px) {
+    body, html {
+        background-image: linear-gradient(45deg, #439EE0 60%, #3077aa);
+    }
+
     .container {
         flex-direction: row;
     }
 
     .cont2 {
         width: 400px;
+        height: 350px;
     }
 }
