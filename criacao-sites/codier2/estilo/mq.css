@@ -16,4 +16,8 @@
     .container {
         flex-direction: row;
     }
+
+    .cont2 {
+        width: 400px;
+    }
 }
